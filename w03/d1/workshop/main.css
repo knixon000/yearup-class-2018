@@ -1,0 +1,39 @@
+div {
+  height: 800px;
+}
+
+.section1 {
+  background-color: #74b9ff;
+}
+
+.section2 {
+  background-color: #0984e3;
+}
+
+.section3 {
+  background-color: #a29bfe;
+}
+
+.section4 {
+  background-color: #6c5ce7;
+}
+
+ {
+  display: inline-block;
+}
+
+img.left {
+  width: 600px;
+  margin-left: 10px;
+  margin-top: 200px;
+  float: left;
+}
+
+img.center {
+  width: 600px;
+  margin-top: 200px;
+}
+
+p {
+  font-family: sans-serif;
+}
