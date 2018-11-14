@@ -16,9 +16,9 @@ axios.get("https://www.redbullshopus.com/products.json")
     let title2 = document.getElementById('prod2');
     title2.innerHTML = response.data.products[1].title;
 
-    let image3 = document.getElementById('product2');
+    let image3 = document.getElementById('product3');
     image3.src = response.data.products[2].images[0].src;
-    let title3 = document.getElementById('prod2');
+    let title3 = document.getElementById('prod3');
     title3.innerHTML = response.data.products[2].title;
   })
   .catch(function(error){

@@ -5,11 +5,17 @@
 
 body {
   font-family: helvetica;
-  background-color: red;
+  background-color: white;
+}
+
+header {
+  background-color: #FFC906;
+  color: #CB2026;
 }
 
 img {
   width:45%;
   height:45%;
   display: inline;
+  border: 1px outset #004C6C;
 }
