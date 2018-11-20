@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #EB5757;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #303030;
+}
+
+.row {
+  padding: 5px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 3px 3px;
+}
+
+img {
+  width: 100%;
+}
+
+h6 {
+  font-weight: bold;
+  text-align: left;
+}
+
+p {
+  font-size: 11px;
+  text-align: left;
+}
+
+.fill {
+  padding: 10px;
+}
