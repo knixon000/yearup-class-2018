@@ -1,7 +1,9 @@
+require 'pry'
 require 'faker'
 require './student'
 require './classroom'
 require './grade'
+require './reportcard'
 
 # Our four classrooms for the first years
 @A = Classroom.new("1A")
@@ -15,7 +17,7 @@ def genStudent
   s.reportcard.addGrade(Grade.new("history", rand(0..100)))
   s.reportcard.addGrade(Grade.new("english", rand(0..100)))
   s.reportcard.addGrade(Grade.new("science", rand(0..100)))
-  s
+  return s
 end
 
 # Generate our students
@@ -33,46 +35,49 @@ end
 end
 
 # Check the rosters
-# @A.roster
-# puts ""
-# @B.roster
-# puts ""
-# @C.roster
-# puts ""
-# @D.roster
-# puts ""
+@A.roster()
+puts ""
+@B.roster()
+puts ""
+@C.roster()
+puts ""
+@D.roster()
+puts ""
 
 
 ############################################################
 # CHALLENGE 1
 
-# def findFailing(classroom)
-#   classroom.students.each { |key,value|
-#     total = 0
-#     value.reportard.grades.each do |key, value|
-#       total = total + value.grade
-#     end
-#     if total > 200:
-#       puts "PASS"
-#   }
-# end
+def findFailing(classroom)
+  classroom.students.each { |key, student|
+    total = 0
+    student.reportcard.grades.each do |key, grade|
+      total = total + grade.score
+    end
+    if total > 200
+      puts student.name + " PASS"
+    elsif total < 200
+      puts student.name + " FAIL"
+    end
+  }
+end
 
-# findFailing @A
+findFailing @A
 
 ############################################################
 # CHALLENGE 2
-# def findExceptional(classroom)
-#   classroom.students.each { |key,value|
-#       total = 0
-#       value.reportcard.grade.map do |key, value|
-#         total = total + value.score
-#       end
-#       if total > 260:
-#         puts student.name
+def findExceptional(classroom)
+  classroom.students.each { |key, student|
+    total = 0
+    student.reportcard.grades.each do |key, grade|
+      total = total + grade.score
+    end
+    if total > 200
+      puts student.name + " EXCEPTIONAL"
+    end
+  }
+end
 
-#     }
-# end
-
-# findExceptional @B
+findExceptional @B
 
 ############################################################
