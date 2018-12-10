@@ -1,3 +1,13 @@
 body {
-  font-family: sans-serif;
+  font-family: helvetica;
+  background-color: lightblue;
+
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
