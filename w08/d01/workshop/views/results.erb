@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GoogleBooks Search</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1> <%= @title %> </h1>
+    <form action="/" method="POST">
+      <input name="query" />
+      <button>Search</button>
+    </form>
+
+    <center>
+      <div id="container">
+          <% if @image %>
+            <img src= "<%= @image %>" alt="book image">
+          <% end %>
+          <h4> <%= @book %> </h4>
+          <h4> <%= @authors %> </h4>
+          <p> <%= @description %> </p>
+      </div>
+    </center>
+  </body>
+</html>

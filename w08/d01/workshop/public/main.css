@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: darkred;
+}
+
+h1, form{
+  text-align: center;
+  padding: 10px;
+}
+
+#container {
+  background-color: wheat;
+  height: 100%;
+  width: 75%;
+  border: 1px solid gray;
+}
+
+div p {
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+div img {
+  margin-top: 10px;
+}
